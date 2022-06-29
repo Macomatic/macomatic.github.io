@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    font-family: 'Bebas Neue', cursive;
+    padding: 10px;
+}
+
+h3, h4, p, label {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 1rem;
+    text-align: center;
+}
+
+.nav {
+    background-color: rgb(76, 164, 76);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0.25rem 2rem;
+    box-shadow: 5px 5px 8px gray;
+}
+
+.nav-title {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+
+}
+
+.nav ul {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+    padding-right: 5rem;
+}
+
+.nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+}
+
+.nav li {
+    background-color: rgb(112, 208, 112);
+}
+
+.nav li:hover {
+    background-color: rgb(118, 189, 113);
+    text-decoration: underline;
+}
+
+.active {
+    border: 2px solid white;
+}
+
+
+.customButton {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 10rem;
+  will-change: transform;
+}
+
+.customButton:disabled {
+  pointer-events: none;
+}
+
+.customButton:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.customButton:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.temp {
+    position: relative;
+    top: 35%;
+}
+
