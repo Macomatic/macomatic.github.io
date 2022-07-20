@@ -45,6 +45,7 @@ export default function FindACourt() {
         
         <div>
         <h1>Find a Court</h1>
+        <p>Choose your filters on the left side, then click the "Filter Results" button to find all viable Courts!</p>
         </div>
         <div className="grid">
           <div className="grid">
@@ -140,6 +141,7 @@ export default function FindACourt() {
               <button className="courtButton" onClick={() => {toCourtPage(4)}}>Visit Court</button>
               </div>
             }
+            <p>If you see no courts, there are no courts that match your given parameters! Try switching it up!</p>
           </div>
         </div>
       </div>

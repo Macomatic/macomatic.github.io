@@ -8,7 +8,7 @@ export default function Navbar() {
                 <NavElement to="/home">Home</NavElement>
                 <NavElement to="/findacourt">Find a Court</NavElement>
                 <NavElement to="/tenniscontent">Tennis Content</NavElement>
-                <NavElement to="/about">About</NavElement>
+                <NavElement to="/about">About Us</NavElement>
                 <NavElement to="/howtouse">Steps to use Our Service</NavElement>
             </ul>
         </nav>

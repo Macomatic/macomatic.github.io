@@ -45,6 +45,7 @@ export default function FindACourtFR() {
         
         <div>
         <h1>Trouver un tribunal</h1>
+        <p>Choisissez vos filtres sur le côté gauche, puis cliquez sur le bouton "Filtrer les résultats" pour trouver tous les tribunaux viables!</p>
         </div>
         <div className="grid">
           <div className="grid">
@@ -140,6 +141,7 @@ export default function FindACourtFR() {
               <button className="courtButton" onClick={() => {toCourtPage(4)}}>Visite de la cour</button>
               </div>
             }
+            <p>Si vous ne voyez aucun terrain, aucun terrain ne correspond à vos paramètres donnés ! Essayez de le changer !</p>
           </div>
         </div>
       </div>

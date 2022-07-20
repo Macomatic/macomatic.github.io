@@ -10,6 +10,8 @@ import ContactUs from './pages/ContactUs';
 import Confirmation from './pages/Confirmation';
 import HowToUse from './pages/HowToUse';
 import FindACourtFR from './pages/FindACourtFR';
+import ErrorComponent from './pages/Error404';
+import Error404 from './pages/Error404';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 // import Button from 'react-bootstrap/Button';
 
@@ -29,6 +31,7 @@ function App() {
           <Route path="/contactus" element={<ContactUs />} />
           <Route path="/confirmation" element={<Confirmation />} />
           <Route path="/howtouse" element={<HowToUse />} />
+          <Route element={<Error404 />} />
           <Route path='*' element={<Home />}></Route>
         </Routes>
       </div>

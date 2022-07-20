@@ -1,4 +1,6 @@
 import "../assets/styles/styles.css"
+import  { Link } from "react-router-dom"
+
 
 export default function About() {
 
@@ -12,9 +14,9 @@ export default function About() {
         <a href="mailto: tenniscourtfinder@gmail.com" target="_blank">
           <p>Email: tenniscourtfinder@gmail.com</p>
         </a>
-        <a href="/contactus">
-          <p>Contact Us Form</p>
-        </a>
+        <Link to="/contactus">
+          <button className="customButton">Contact Form</button>
+        </Link>
       </div>
   
       
