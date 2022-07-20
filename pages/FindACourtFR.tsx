@@ -4,7 +4,7 @@ import  { Link, useNavigate } from "react-router-dom"
 
 
 
-export default function FindACourt() {
+export default function FindACourtFR() {
 
     const [courtLights, setCourtLights] = useState(String);
     const [accessType, setAccessType] = useState(String);
@@ -17,7 +17,7 @@ export default function FindACourt() {
     const toCourtPage = (id: number) => {
       navigate('/tenniscourt', {state: {
         id: id,
-        lang: "eng"
+        lang: "fr"
       }});
     }
 
@@ -39,63 +39,63 @@ export default function FindACourt() {
     
     return (
       <div>
-        <Link to="/findacourtfr">
-          <button className="courtButton languageButton">FR</button>
+        <Link to="/findacourt">
+          <button className="courtButton languageButton">ENG</button>
         </Link>
         
         <div>
-        <h1>Find a Court</h1>
+        <h1>Trouver un tribunal</h1>
         </div>
         <div className="grid">
           <div className="grid">
             <div>
-              <h3>Court Surface</h3>
+              <h3>Surface du terrain</h3>
               <input type="radio" name="surface" id="grass" value="grass" onChange={e=>setSurface(e.target.value)}  />
-              <label htmlFor="grass">Grass</label>
+              <label htmlFor="grass">Herbe</label>
               <input type="radio" name="surface" id="clay" value="clay" onChange={e=>setSurface(e.target.value)}/>
-              <label htmlFor="clay">Clay</label>
+              <label htmlFor="clay">Argile</label>
               <input type="radio" name="surface" id="asphalt" value="asphalt" onChange={e=>setSurface(e.target.value)}/>
-              <label htmlFor="asphalt">Asphalt</label>
+              <label htmlFor="asphalt">Asphalte</label>
               <br /><br />
-              <h3>Court Popularity</h3>
+              <h3>Popularité de la cour</h3>
               <input type="radio" name="pop" id="empty" value="empty" onChange={e=>setPopularity(e.target.value)} />
-              <label htmlFor="empty">Empty</label>
+              <label htmlFor="empty">Vide</label>
               <input type="radio" name="pop" id="somewhatBusy" value="somewhatBusy" onChange={e=>setPopularity(e.target.value)} />
-              <label htmlFor="somewhatBusy">Somewhat Busy</label>
+              <label htmlFor="somewhatBusy">Un peu occupé</label>
               <input type="radio" name="pop" id="busy" value="busy" onChange={e=>setPopularity(e.target.value)} />
-              <label htmlFor="busy">Busy</label>
+              <label htmlFor="busy">Occupé</label>
               <br /><br />
-              <h3>Hours of Operation</h3>
+              <h3>Heures d'ouverture</h3>
               <div>
                 <input type="radio" name="operationTimes" id="morning" value="morn" onChange={e=>setOperationTimes(e.target.value)} />
-                <label htmlFor="morning">Morning: 5:00 AM - 11:00 AM</label>
+                <label htmlFor="morning">Matin : 5h00 - 11h00</label>
               </div>
               <br />
               <div>
                 <input type="radio" name="operationTimes" id="afternoon" value="aft" onChange={e=>setOperationTimes(e.target.value)} />
-                <label htmlFor="afternoon">Afternoon: 12:00 PM - 5:00 PM</label>
+                <label htmlFor="afternoon">Après-midi : 12h00 - 17h00</label>
               </div>
               <br />
               <div>
                 <input type="radio" name="operationTimes" id="evening" value="eve" onChange={e=>setOperationTimes(e.target.value)} />
-                <label htmlFor="evening">Evening 6:00 PM - 11:00 PM</label>
+                <label htmlFor="evening">Soir 18:00 - 23:00</label>
               </div>
               
             </div>
             <div>
-              <h3>Access Type</h3>
+              <h3>Type d'accès</h3>
               <input type="radio" name="access" id="public" value="public"  onChange={e=>setAccessType(e.target.value)}/>
               <label htmlFor="public">Public</label>
               <input type="radio" name="access" id="private" value="private" onChange={e=>setAccessType(e.target.value)} />
-              <label htmlFor="private">Private</label>
+              <label htmlFor="private">Privé</label>
               <br /><br />
-              <h3>Court Lights</h3>
+              <h3>Lumières de cour</h3>
               <input type="radio" name="lights" id="yes" value="hasLights" onChange={e=>setCourtLights(e.target.value)} />
-              <label htmlFor="yes">Yes</label>
+              <label htmlFor="yes">Oui</label>
               <input type="radio" name="lights" id="no" value="noLights" onChange={e=>setCourtLights(e.target.value)}/>
-              <label htmlFor="no">No</label>
+              <label htmlFor="no">Non</label>
               <br /><br /><br /><br /><br />
-              <button className="customButton" onClick={filterResults}>Filter Results</button>
+              <button className="customButton" onClick={filterResults}>Filtrer les résultats</button>
             </div>
           </div>
           <div>
@@ -107,7 +107,7 @@ export default function FindACourt() {
              <div className="courts">
               <h3>Glennfield Court</h3>
               <p>123 Glennfield St. K1S 0K7</p>
-              <button className="courtButton" onClick={() => {toCourtPage(1)}}>Visit Court</button>
+              <button className="courtButton" onClick={() => {toCourtPage(1)}}>Visite de la cour</button>
             </div>
             }
             { (filtered == "" ||
@@ -117,7 +117,7 @@ export default function FindACourt() {
             <div className="courts">
               <h3>Allen-Smith Court</h3>
               <p>456 Allen-Smith Dr. K1S 5L2</p>
-              <button className="courtButton" onClick={() => {toCourtPage(2)}}>Visit Court</button>
+              <button className="courtButton" onClick={() => {toCourtPage(2)}}>Visite de la cour</button>
               </div>
             }
             { (filtered == "" ||
@@ -127,7 +127,7 @@ export default function FindACourt() {
             <div className="courts">
               <h3>uOttawa Tennis Court</h3>
               <p>78 University of Ottawa Rd. K1S 2B3</p>
-              <button className="courtButton" onClick={() => {toCourtPage(3)}}>Visit Court</button>
+              <button className="courtButton" onClick={() => {toCourtPage(3)}}>Visite de la cour</button>
               </div>
             }
             { (filtered == "" ||
@@ -137,7 +137,7 @@ export default function FindACourt() {
             <div className="courts">
               <h3>Rideau Tennis Court</h3>
               <p>910 Rideau St. K1S 4C6</p>
-              <button className="courtButton" onClick={() => {toCourtPage(4)}}>Visit Court</button>
+              <button className="courtButton" onClick={() => {toCourtPage(4)}}>Visite de la cour</button>
               </div>
             }
           </div>

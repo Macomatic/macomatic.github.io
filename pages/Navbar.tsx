@@ -7,9 +7,9 @@ export default function Navbar() {
             <ul>
                 <NavElement to="/home">Home</NavElement>
                 <NavElement to="/findacourt">Find a Court</NavElement>
-                <NavElement to="/courtcalendar">Court Calendar</NavElement>
+                <NavElement to="/tenniscontent">Tennis Content</NavElement>
                 <NavElement to="/about">About</NavElement>
-                <NavElement to="/login">Login</NavElement>
+                <NavElement to="/howtouse">Steps to use Tennis Court Finder</NavElement>
             </ul>
         </nav>
     );
